@@ -1,0 +1,10 @@
+import numpy as np
+a = list(map(int, input("Enter 3 numbers: ").split()))
+b = list(map(int, input("Enter 3 numbers: ").split()))
+a = np.array(a)
+b = np.array(b)
+v = np.vstack((a,b))
+print("Vertical stack: \n",np.vstack((a,b)))
+print("Horizontal stack: \n",np.hstack((a,b)))
+print("Element 5 access: ",v[1,1])
+print("Element 5 access: ",v[1][1])
